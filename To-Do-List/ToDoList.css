@@ -1,0 +1,172 @@
+body {
+    font-family: sans-serif;
+    -webkit-font-smoothing: auto;
+    -moz-font-smoothing: auto;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: auto;
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #20514f;
+
+    color: #fff;
+    line-height: 1.6;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#root {
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.container {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    text-align: center;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.5s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background: rgb(202 101 106 / 18%);
+    color: white;
+    transition: 0.4s;
+}
+
+
+input:focus {
+    border: 2px solid #ff00ff;
+    box-shadow: 0px 0px 15px #ff00ff;
+}
+
+button {
+    padding: 12px 15px;
+    background: linear-gradient(90deg, #272627, #ff007f);
+    ;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #ff007f, #ff4da6);
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 0.5s ease-in-out forwards;
+}
+
+.delete-btn {
+    background: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background: #e60000;
+    transform: rotate(10deg) scale(1.1);
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
