@@ -7,7 +7,7 @@ import TodoList from "./components/To-Do-List/ToDoList";
 // Form Validation
 import FormValidation from "./components/Form Validation/FormValidation";
 
-// Digital Clock
+// Digital  Clock
 import DigitalClock from "./components/Digital Clock/DigitalClock";
 
 function App() {
